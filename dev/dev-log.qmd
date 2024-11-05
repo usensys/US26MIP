@@ -1,0 +1,19 @@
+---
+title: "developer-log"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+
+```
+
+# Init
+```{r, eval=FALSE}
+# usethis::create_package(getwd(), open = FALSE)
+# usethis::use_package("usensys")
+# usethis::use_readme_rmd()
+```
+
