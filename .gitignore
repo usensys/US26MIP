@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+^tmp
+^scenarios
+docs
+inst/doc

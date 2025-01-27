@@ -1,0 +1,79 @@
+url: https://github.com/usensys/US26MIP
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    bootswatch: morph
+    pkgdown-nav-height: 80px
+
+development:
+  mode: unreleased
+  destination: dev
+  version_label: danger
+  version_tooltip: "development version"
+
+footer:
+  structure:
+    left: package
+    right: built_with
+
+figures:
+  dpi: 300
+
+navbar:
+
+reference:
+- title: Data Import
+  desc:  Import GenX/PowerGenome MIP-case dataset and convert to US26MIP format
+  contents:
+  - mip_import_raw_data
+  - mip_build_dataset
+  - starts_with("mip_import")
+  - starts_with("mip_make")
+
+- title: Validation and summary
+  desc:  Check US26MIP data
+  contents:
+  - starts_with("mip_check")
+  - starts_with("mip_match")
+  - matches("window|lifetime|mean|summary|_na|suggest")
+
+- title: Building the model
+  desc:  Create a US26MIP model
+  contents:
+  - mip_build_model
+  - starts_with("mip_build")
+
+- title: Running the model
+  desc:  Run US26MIP model
+  contents:
+  - starts_with("mip_solve")
+
+- title: Post-processing
+  desc:  Post-process US26MIP model results
+  contents:
+  - starts_with("mip_open")
+  - starts_with("mip_export")
+  - starts_with("mip_post")
+  - starts_with("mip_plot")
+
+
+- title: Yaml file
+  contents:
+  - matches("yaml")
+
+- title: Utility functions
+  desc:  Utility functions for US26MIP
+  contents:
+  - starts_with("mip_load")
+  - starts_with("mip_get")
+  - is_usensys_dir
+  # - is_vre
+  - log_message
+  - matches("mip_resource_type")
+  - matches("mip_resource")
+  - mip_fuel_alias
+  - mip_resource_type
+
+
+

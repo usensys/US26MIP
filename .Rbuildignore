@@ -1,3 +1,8 @@
 ^US26MIP\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+^data-raw$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^LICENSE\.md$
