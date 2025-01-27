@@ -1,7 +1,7 @@
 ---
 title: "developer-log"
 format: html
-editor: visual
+editor: source
 editor_options: 
   chunk_output_type: console
 ---
@@ -11,9 +11,34 @@ editor_options:
 ```
 
 # Init
+
 ```{r, eval=FALSE}
 # usethis::create_package(getwd(), open = FALSE)
 # usethis::use_package("usensys")
 # usethis::use_readme_rmd()
+# usethis::use_r("data")
+usethis::use_r("model")
+usethis::use_r("results")
+# usethis::use_r("plot")
+# usethis::use_data_raw()
+# usethis::use_agpl3_license()
+usethis::use_vignette("US26MIP")
+usethis::use_vignette("install")
+usethis::use_vignette("cases")
+usethis::use_vignette("about")
+usethis::use_news_md()
+
+```
+
+
+## Webpage
+```{r, eval=FALSE}
+# ?pkgdown::as_pkgdown()
+# usethis::use_pkgdown()
+# usethis::use_pkgdown_github_pages()
+
+pkgdown::build_site()
+
+
 ```
 
